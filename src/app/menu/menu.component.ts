@@ -1,6 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input } from '@angular/core';
 import { Keg } from '../../keg';
-import { Beers } from '../../beer-info';
 
 @Component({
   selector: 'app-menu',
@@ -9,11 +8,8 @@ import { Beers } from '../../beer-info';
 })
 export class MenuComponent implements OnInit {
 
-  kegs = Beers;
+  @Input() childMenuList: Keg[];
 
-  public sortingBeer(beer) {
-    this.kegs.sort();
-  }
 
   abvStrength(beer) {
     if (beer.abv >= 6 ) {

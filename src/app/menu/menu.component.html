@@ -1,6 +1,6 @@
 
 <div class="menu">
-  <div *ngFor="let beer of kegs">
+  <div *ngFor="let beer of childMenuList">
     <img src={{beer.img}} alt={{beer.name}} title={{beer.name}}>
     <h3>{{beer.name}} -  ${{beer.price}}</h3>
     <p>{{beer.brand}}</p>
