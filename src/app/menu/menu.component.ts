@@ -1,5 +1,6 @@
-import { Component, OnInit, Input } from '@angular/core';
+import { Component, OnInit, Input, Output, EventEmitter } from '@angular/core';
 import { Keg } from '../../keg';
+import { PintComponent } from '../pint/pint.component'
 
 @Component({
   selector: 'app-menu',
@@ -9,6 +10,14 @@ import { Keg } from '../../keg';
 export class MenuComponent implements OnInit {
 
   @Input() childMenuList: Keg[];
+  @Output() clickSender = new EventEmitter();
+
+  sellPintClicked(pintToSell: Keg) {
+    this.clickSender.emit(pintToSell);
+  }
+  sellPint(beer) {
+    beer.pints --;
+  }
 
 
   abvStrength(beer) {

@@ -5,6 +5,8 @@
     <h3>{{beer.name}} -  ${{beer.price}}</h3>
     <p>{{beer.brand}}</p>
     <p>ABV: <span [class]="abvStrength(beer)">{{beer.abv}}%</span></p>
+    <button (click)="sellPint(beer)" type="button" name="button">Pull a Pint</button>
+    <p>Pints remaining: {{beer.pints}}</p>
   </div>
 
 </div>

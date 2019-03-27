@@ -1,4 +1,6 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Input} from '@angular/core';
+import { AppComponent } from '../app.component';
+import { Keg } from '../../keg';
 
 @Component({
   selector: 'app-pint',
@@ -6,10 +8,19 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./pint.component.css']
 })
 export class PintComponent implements OnInit {
+  @Input() childMenuList: Keg;
 
-  constructor() { }
+  currentKeg : Keg;
+  sellPint(beer) {
+
+    beer.pints --;
+  }
+
+
+
+
+  // constructor() { }
 
   ngOnInit() {
   }
-
 }
