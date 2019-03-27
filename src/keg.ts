@@ -1,8 +1,11 @@
 export class Keg {
-  img: string;
-  name: string;
-  brand: string;
-  price: number;
-  abv: number;
-  pints: number;
+  constructor (
+
+    public img: string,
+    public name: string,
+    public brand: string,
+    public price: number,
+    public abv: number,
+    public pints: number 
+  ) {}
 }
