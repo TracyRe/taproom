@@ -1,0 +1,41 @@
+img {
+  height: 100%;
+  width: 100%;
+  align-items: flex-start;
+}
+
+.menu {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);//repeat(auto-fill, minmax(200px, 1fr))
+  justify-content: space;
+  grid-column-gap: 2rem;
+  grid-row-gap: 2rem;
+  margin: 1rem auto;
+  padding: 2rem;
+  width: 80vw;
+  background: rgba(255, 255, 255, 0.85);
+  box-shadow: 0 0 30px #fff, 0 0 20px #fff, 0 0 10px #fff;
+  border-radius: 10px;
+  text-align: center
+}
+
+
+.abv-base {
+  font-weight: bold;
+  color: #a57f00 ;
+}
+
+.abv-darker1  {
+  font-weight: bold;
+  color: #8c6b00 ;
+}
+
+.abv-darker2  {
+  font-weight: bold;
+  color: #6b5100 ;
+}
+
+.abv-darker3  {
+  font-weight: bold;
+  color: #493700 ;
+}
