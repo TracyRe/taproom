@@ -1,0 +1,51 @@
+*{
+  /* border: 1px solid #f0f; */
+}
+
+.order-form {
+  background: #fff;
+  margin: 2rem auto;
+  padding: 1rem;
+  border: 1px solid #000;
+  box-shadow: 2px 2px 4px #000;
+  width: 800px;
+}
+
+h2 {
+  text-align: center;
+}
+
+h3, h4, h5 {
+  text-align: right;
+}
+
+h5 {
+  position: relative;
+  top: 3px;
+}
+
+h3, h3 + p {
+  margin-top: 2rem;
+}
+
+p {
+  padding-left: .25rem;
+}
+
+form {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  grid-auto-rows: auto;
+  grid-row-gap: .25rem;
+  margin-top: 1rem;
+}
+
+label {
+  text-align: right;
+  margin-right: 1rem;
+}
+
+button {
+  align-self: center;
+  width: 150px;
+}

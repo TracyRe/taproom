@@ -8,10 +8,10 @@ import { Keg } from '../models/keg.model';
   templateUrl: './edit-keg.component.html',
   styleUrls: ['./edit-keg.component.css']
 })
-export class editKegComponent implements OnInit {
+export class EditKegComponent implements OnInit {
 
 
-  // constructor() { }
+  constructor() { }
 
   ngOnInit() {
   }

@@ -9,21 +9,14 @@ import { Keg } from './models/keg.model';
 export class AppComponent {
   title = 'Portland Tap Room';
 
+  addKeg(newKeg: Keg) {
+    this.masterKegList.push(newKeg);
+        console.log({newKeg});
+  }
   masterKegList: Keg[] = [
-    new Keg ('./assets/img/fancy-barrel.jpg', 'Fancy Beer', 'The Fanciest', 5, 4.8, 124 ),
-    new Keg ('./assets/img/whiskey-barrel.jpg', 'Pliny the Elder', 'Russian River', 9, 5.5, 124 ),
-    new Keg ('./assets/img/oak-barrel.jpg','Miller Lite','Miller',3, 3.4, 124 )
+    new Keg ('./assets/img/fancy-barrel.jpg', 'Fancy Beer', 'The Fanciest', 5, 4.8),
+    new Keg ('./assets/img/whiskey-barrel.jpg', 'Pliny the Elder', 'Russian River', 9, 5.5),
+    new Keg ('./assets/img/oak-barrel.jpg','Miller Lite','Miller',3, 3.4)
   ]
-
-
-    sellPint(beer) {
-      beer.pints --;
-    }
-    sellGrowler(beer) {
-      beer.pints -=4;
-    }
-    replaceKeg(beer) {
-      beer.pints = 124;
-    }
 
 }

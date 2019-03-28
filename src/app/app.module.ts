@@ -1,11 +1,12 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { FormsModule } from '@angular/forms';
+
 
 
 import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
-import { PintComponent } from './pint/pint.component';
-import { FormComponent } from './form/form.component';
+import { EditKegComponent } from './edit-keg/edit-keg.component';
 import { KegsComponent } from './kegs/kegs.component';
 import { NewKegComponent } from './new-keg/new-keg.component';
 
@@ -14,13 +15,13 @@ import { NewKegComponent } from './new-keg/new-keg.component';
   declarations: [
     AppComponent,
     HeaderComponent,
-    PintComponent,
-    FormComponent,
+    EditKegComponent,
     KegsComponent,
     NewKegComponent
   ],
   imports: [
-    BrowserModule
+    BrowserModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
