@@ -8,24 +8,29 @@
   padding: 1rem;
   border: 1px solid #000;
   box-shadow: 2px 2px 4px #000;
-  width: 800px;
+  width: 48%;
 }
 
 h2 {
   text-align: center;
 }
 
+h3 {
+  font-family: Helvetica, Arial, sans-serif;
+  line-height: 100%;
+}
+
+
+h3, h3 + p{
+  margin-top: 2rem;
+}
+
 h3, h4, h5 {
   text-align: right;
 }
 
-h5 {
-  position: relative;
-  top: 3px;
-}
-
-h3, h3 + p {
-  margin-top: 2rem;
+h3, h3 + p, h5, h5 + p {
+  align-self:  baseline;
 }
 
 p {
@@ -34,7 +39,7 @@ p {
 
 form {
   display: grid;
-  grid-template-columns: 1fr 3fr;
+  grid-template-columns: 1fr 2fr;
   grid-auto-rows: auto;
   grid-row-gap: .25rem;
   margin-top: 1rem;

@@ -11,7 +11,6 @@ export class AppComponent {
 
   addKeg(newKeg: Keg) {
     this.masterKegList.push(newKeg);
-        console.log({newKeg});
   }
   masterKegList: Keg[] = [
     new Keg ('./assets/img/fancy-barrel.jpg', 'Fancy Beer', 'The Fanciest', 5, 4.8),

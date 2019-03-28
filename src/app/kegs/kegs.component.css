@@ -4,13 +4,18 @@ img {
   align-self: flex-start;
 }
 
-
+h3 {
+  line-height: 100%;
+  font-size: 1.15rem;
+  margin-bottom: .5rem;
+}
 
 .menu {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));//repeat(3, 1fr)
-  justify-content: space;
+  justify-content: space-between;
   align-items: flex-start;
+  align-content: center;
   grid-column-gap: 2rem;
   grid-row-gap: 2rem;
   margin: 1rem auto;
@@ -27,22 +32,22 @@ img {
 }
 .abv-base {
   font-weight: bold;
-  color: #a57f00 ;
+  color: #d1a102 ;
 }
 
 .abv-darker1  {
   font-weight: bold;
-  color: #8c6b00 ;
+  color: #9b7700 ;
 }
 
 .abv-darker2  {
   font-weight: bold;
-  color: #6b5100 ;
+  color: #594400 ;
 }
 
 .abv-darker3  {
   font-weight: bold;
-  color: #493700 ;
+  color: #302500 ;
 }
 
 .low-pint-alert {
@@ -55,4 +60,12 @@ img {
 
 .show-button {
   display: block;
+}
+
+.admin {
+   width: 100%;
+  display: flex;
+  flex: column nowrap;
+  justify-content: center;
+  align-content: center;
 }

@@ -4,6 +4,7 @@
 </div>
 <div class="content">
   <app-kegs [childKegList]="masterKegList" ></app-kegs>
+  <app-edit-keg></app-edit-keg>
   <app-new-keg (sendKeg)="addKeg($event)"></app-new-keg>
 
 
