@@ -1,0 +1,13 @@
+
+<div class="menu">
+  <div *ngFor="let beer of childKegList">
+    <img src={{beer.img}} alt={{beer.name}} title={{beer.name}}>
+    <h3>{{beer.name}} -  ${{beer.price}}</h3>
+    <p class="brand">{{beer.brand}}</p>
+    <p>ABV: <span [class]="abvStrength(beer)">{{beer.abv}}%</span></p>
+    <button (click)="sellPint(beer)" type="button" name="button">Pull a Pint</button>
+    <button (click)="sellGrowler(beer)" type="button" name="button">Sell a Growler</button>
+    <p>Pints remaining: <span [class]="pintsLow(beer)">{{beer.pints}}</span></p>
+    <button [class]="  timeToReplaceKeg(beer)" (click)="replaceKeg(beer)" type="button" name="button">Replace Keg</button>
+  </div>
+</div>

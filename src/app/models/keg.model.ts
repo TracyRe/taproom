@@ -1,4 +1,5 @@
 export class Keg {
+  pints: number =  124;
   constructor (
 
     public img: string,
@@ -6,6 +7,5 @@ export class Keg {
     public brand: string,
     public price: number,
     public abv: number,
-    public pints: number 
   ) {}
 }

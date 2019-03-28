@@ -3,8 +3,10 @@
   <app-header></app-header>
 </div>
 <div class="content">
-  <app-menu [childMenuList]="masterBeerList" (clickSender)="sellPint($event)"></app-menu>
-  <app-form></app-form>
-  <app-pint></app-pint>
+  <app-kegs [childKegList]="masterKegList" ></app-kegs>
+  <app-new-keg></app-new-keg>
+
 
 </div>
+
+<!-- (clickSender)="sellPint($event)" -->

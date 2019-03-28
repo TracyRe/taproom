@@ -27,7 +27,9 @@ button {
   text-align: center
 }
 
-
+.brand {
+  font-style: italic;
+}
 .abv-base {
   font-weight: bold;
   color: #a57f00 ;
@@ -46,4 +48,16 @@ button {
 .abv-darker3  {
   font-weight: bold;
   color: #493700 ;
+}
+
+.low-pint-alert {
+  color: #f00;
+}
+
+.hide-button {
+  display: none;
+}
+
+.show-button {
+  display: block;
 }

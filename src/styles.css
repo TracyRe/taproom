@@ -1,7 +1,9 @@
 /* You can add global styles to this file, and also import other style files */
 body {
   background-image: url(./assets/img/patrick-tomasso-499112-unsplash.jpg);
+  background-repeat: no-repeat;
   background-size: cover;
+  background-color: #0f0e0d;
   width: 100vw;
   height: 100%;
   font-size: 18px;

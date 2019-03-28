@@ -6,7 +6,8 @@ import { AppComponent } from './app.component';
 import { HeaderComponent } from './header/header.component';
 import { PintComponent } from './pint/pint.component';
 import { FormComponent } from './form/form.component';
-import { MenuComponent } from './menu/menu.component';
+import { KegsComponent } from './kegs/kegs.component';
+import { NewKegComponent } from './new-keg/new-keg.component';
 
 
 @NgModule({
@@ -15,7 +16,8 @@ import { MenuComponent } from './menu/menu.component';
     HeaderComponent,
     PintComponent,
     FormComponent,
-    MenuComponent
+    KegsComponent,
+    NewKegComponent
   ],
   imports: [
     BrowserModule
